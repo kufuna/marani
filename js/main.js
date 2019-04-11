@@ -246,11 +246,11 @@ for (var i = 0; i < ab.length; i++) {
         easing: Expo.easeInOut,
         speedIn: .6,
         speedOut: .6,
-        image1: '../images/lobiani.jpg',
-        image2: '../images/discover.jpg',
-        image3 : '../images/food.jpg',
-        image4 : '../images/wine.jpg',
-        displacementImage: '../images/displacement/4.png'
+        image1: 'images/lobiani.jpg',
+        image2: 'images/discover.jpg',
+        image3 : 'images/food.jpg',
+        image4 : 'images/wine.jpg',
+        displacementImage: 'images/displacement/4.png'
     });
 }
 
