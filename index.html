@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+<div id="test">
+    <div class="box" data-id="0"><span>DISCOVER</span></div>
+    <div class="box" data-id="1"><span>FOOD</span></div>
+    <div class="box" data-id="2"><span>WINE</span></div>
+    <div class="box" data-id="3" style="display: none;">4</div>
+    <!-- <div id="box" data-id="3">4</div> -->
+
+    <style>
+        .box {
+            font-size: 40px;
+            display: inline-block;
+            float: left;
+            height: 50%;
+            z-index: 10;
+            padding-left: 45px;
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+            width: 33.3%;
+            bottom: 0;
+            position: absolute;
+            border-left: 1px solid white;
+            transition: .5s;
+        }
+        .box span {
+            display: inline-block;
+            transition: .5s;
+            backface-visibility: hidden;
+            pointer-events: none;
+        }
+        .box:hover span {
+            transform: translateY(-50px);
+        }
+        .box:nth-child(1){
+            padding-left: 90px;
+        }
+        .box:nth-child(2){
+            left: 33.3%;
+        }
+        .box:nth-child(3){
+            left: 66%;
+        }
+        #box {
+            padding: 40px;
+            background: red;
+            font-size: 40px;
+            display: inline-block;
+            float: left;
+        }
+        #test {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+
+    <div class="container"></div>
+
+    <div id="click" style="width: 100px; height: 10000px; position: absolute;
+    top: 100%; background: red;"></div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="js/hover-effect.umd.js"></script> -->
+    <script src="js/main.js"></script>
+    </body>
+</html>
